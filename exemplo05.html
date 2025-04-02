@@ -12,32 +12,46 @@
             background-color: aliceblue;
         }
 
+        div {
+            background-color: #1298db;
+        }
+
         .container {
             border: 7px solid #1298db;
-            width: 10rem;
-            height: 10rem;
+            width: 12rem;
+            height: 13rem;
             margin: 1rem auto;
             background-color: #0fd8ac;
             border-radius: 10%;
             box-shadow: .5rem .5rem .3rem 0.05rem #a07b00;
             padding: 1rem;
+            text-align: center;
         }
 
         .titulo {
             font-size: 1.3rem;
             font-weight: bold;
+            text-align: left;
 
         }
 
         .descricao {
             font-size: .8rem;
+            text-align: left;
+            
         }
 
-        .preco{
+        .preco {
             font-size: 1.5rem;
             font-weight: bold;
-        }    
+            text-align: right;
+        }
 
+        img {
+            height: 6rem;
+            border-radius: 80%;
+
+        }
     </style>
 </head>
 
@@ -52,10 +66,10 @@
             var produto = prompt("informe o produto");
             var descricao = prompt("Descreva o produto");
             var preco = prompt("informe o preço do produto");
-
+            document.write("<img src='supernosso.png' alt='logo do supermercado'>")
             document.write(`<h1 class="titulo">${produto}</h1>`);
             document.write(`<article class="descricao">${descricao}</article>`);
-            document.write(`<aside class="preco">${preco}</aside>`);
+            document.write(`<aside class="preco">R$${preco}</aside>`);
         </script>
     </div>
 </body>
